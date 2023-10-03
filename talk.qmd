@@ -58,7 +58,7 @@ editor: visual
 
 ## Let's see Quarto in action {.center}
 
-<https://github.com/mine-cetinkaya-rundel/quarto-rug-slc>
+<https://github.com/mine-cetinkaya-rundel/quarto-rladies-cologne>
 
 # Parting remarks
 
