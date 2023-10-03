@@ -1,12 +1,20 @@
 ---
 title: "Hello, Penguins!"
-format: html
+author: "Mine Çetinkaya-Rundel"
+format: 
+  html: default
+  pdf: default
 editor: visual
+execute: 
+  echo: true
+bibliography: references.bib
 ---
+
+# Introduction
 
 ## Data
 
-For this analysis we'll use the penguins dataset from the palmerpenguins package.
+For this analysis we'll use the `penguins` dataset from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins/ "Link to palmerpenguins documentation") package.[@gorman2014]
 
 ```{r}
 #| label: load-packages
@@ -20,12 +28,21 @@ library(gt)
 
 ## Species
 
-The figure below is a bar plot of species of penguins.
+@fig-bill-dims-species is a bar plot of species of penguins.
 
 ```{r}
-#| label: bill-dims-species
+#| label: fig-bill-dims-species
+#| fig-cap: |
+#|   A scatterplot of three species of penguins showing the relationship between 
+#|   bill depth and bill length.
 #| fig-width: 5
 #| fig-asp: 0.618
+#| fig-alt: |
+#|   A scatterplot of three species of penguins showing the relationship between 
+#|   bill depth and bill length.
+#| warning: false
+#| output-location: column-fragment
+#| code-line-numbers: "|2|3-6|10"
 
 ggplot(
   penguins,
@@ -42,13 +59,32 @@ ggplot(
 
 ## Penguins
 
-The table below shows the first 10 penguins from the dataset.
+@tbl-penguins-top10 shows the first 10 penguins from the dataset.
 
 ```{r}
-#| label: penguins-top10
+#| label: tbl-penguins-top10
+#| tbl-cap: Top 10 rows of the penguins dataset.
 
 penguins |>
   slice_head(n = 10) |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
   gt()
 ```
+
+# Analysis
+
+## Model 1 results
+
+::: incremental
+-   Some information about the model
+
+-   Some text about results
+
+-   Some comments about shortcomings
+:::
+
+## Model 2 results
+
+blah blah blah
+
+## References

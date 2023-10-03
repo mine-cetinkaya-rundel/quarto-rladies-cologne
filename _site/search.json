@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello, Penguins!",
+    "section": "",
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package.(Gorman, Williams, and Fraser 2014)\n\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(palmerpenguins)\nlibrary(gt)\n\n\n\n\nFigure 1 is a bar plot of species of penguins.\n\nggplot(\n  penguins,\n  aes(\n    x = bill_length_mm, y = bill_depth_mm,\n    color = species, shape = species\n  )\n) +\n  geom_point() +\n  theme_minimal() +\n  scale_color_colorblind() +\n  labs(x = \"Bill length (mm)\", y = \"Bill depth (mm)\")\n\n\n\n\n\n\n\nFigure 1: A scatterplot of three species of penguins showing the relationship between bill depth and bill length.\n\n\n\n\n\n\n\n\nTable 1 shows the first 10 penguins from the dataset.\n\npenguins |&gt;\n  slice_head(n = 10) |&gt;\n  select(species, island, bill_length_mm, bill_depth_mm) |&gt;\n  gt()\n\n\n\nTable 1: Top 10 rows of the penguins dataset.\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n\n\nAdelie\nTorgersen\n39.5\n17.4\n\n\nAdelie\nTorgersen\n40.3\n18.0\n\n\nAdelie\nTorgersen\nNA\nNA\n\n\nAdelie\nTorgersen\n36.7\n19.3\n\n\nAdelie\nTorgersen\n39.3\n20.6\n\n\nAdelie\nTorgersen\n38.9\n17.8\n\n\nAdelie\nTorgersen\n39.2\n19.6\n\n\nAdelie\nTorgersen\n34.1\n18.1\n\n\nAdelie\nTorgersen\n42.0\n20.2"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Hello, Penguins!",
+    "section": "",
+    "text": "For this analysis we’ll use the penguins dataset from the palmerpenguins package.(Gorman, Williams, and Fraser 2014)\n\nlibrary(tidyverse)\nlibrary(ggthemes)\nlibrary(palmerpenguins)\nlibrary(gt)"
+  },
+  {
+    "objectID": "index.html#species",
+    "href": "index.html#species",
+    "title": "Hello, Penguins!",
+    "section": "",
+    "text": "Figure 1 is a bar plot of species of penguins.\n\nggplot(\n  penguins,\n  aes(\n    x = bill_length_mm, y = bill_depth_mm,\n    color = species, shape = species\n  )\n) +\n  geom_point() +\n  theme_minimal() +\n  scale_color_colorblind() +\n  labs(x = \"Bill length (mm)\", y = \"Bill depth (mm)\")\n\n\n\n\n\n\n\nFigure 1: A scatterplot of three species of penguins showing the relationship between bill depth and bill length."
+  },
+  {
+    "objectID": "index.html#penguins",
+    "href": "index.html#penguins",
+    "title": "Hello, Penguins!",
+    "section": "",
+    "text": "Table 1 shows the first 10 penguins from the dataset.\n\npenguins |&gt;\n  slice_head(n = 10) |&gt;\n  select(species, island, bill_length_mm, bill_depth_mm) |&gt;\n  gt()\n\n\n\nTable 1: Top 10 rows of the penguins dataset.\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n\n\nAdelie\nTorgersen\n39.5\n17.4\n\n\nAdelie\nTorgersen\n40.3\n18.0\n\n\nAdelie\nTorgersen\nNA\nNA\n\n\nAdelie\nTorgersen\n36.7\n19.3\n\n\nAdelie\nTorgersen\n39.3\n20.6\n\n\nAdelie\nTorgersen\n38.9\n17.8\n\n\nAdelie\nTorgersen\n39.2\n19.6\n\n\nAdelie\nTorgersen\n34.1\n18.1\n\n\nAdelie\nTorgersen\n42.0\n20.2"
+  },
+  {
+    "objectID": "index.html#model-1-results",
+    "href": "index.html#model-1-results",
+    "title": "Hello, Penguins!",
+    "section": "Model 1 results",
+    "text": "Model 1 results\n\n\nSome information about the model\nSome text about results\nSome comments about shortcomings"
+  },
+  {
+    "objectID": "index.html#model-2-results",
+    "href": "index.html#model-2-results",
+    "title": "Hello, Penguins!",
+    "section": "Model 2 results",
+    "text": "Model 2 results\nblah blah blah"
+  },
+  {
+    "objectID": "talk.html#quarto",
+    "href": "talk.html#quarto",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto …",
+    "text": "Quarto …\n\nis a new, open-source, scientific, and technical publishing system\naims to make the process of creating and collaborating dramatically better\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "talk.html#quarto-1",
+    "href": "talk.html#quarto-1",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem"
+  },
+  {
+    "objectID": "talk.html#quarto-2",
+    "href": "talk.html#quarto-2",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown"
+  },
+  {
+    "objectID": "talk.html#quarto-3",
+    "href": "talk.html#quarto-3",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto …",
+    "text": "Quarto …\nunifies + extends the R Markdown ecosystem\n\nunifies for people who love R Markdown\nextends for people who don’t know R Markdown"
+  },
+  {
+    "objectID": "talk.html#quarto-unifies-extends-r-markdown",
+    "href": "talk.html#quarto-unifies-extends-r-markdown",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto unifies + extends R Markdown",
+    "text": "Quarto unifies + extends R Markdown\n\n\nConsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\nMore accessible defaults as well as better support for accessibility\nGuardrails, particularly helpful for new learners: YAML completion, informative syntax errors, etc.\nSupport for other languages like Python, Julia, Observable, and more via Jupyter engine for executable code chunks."
+  },
+  {
+    "objectID": "talk.html#lets-see-quarto-in-action",
+    "href": "talk.html#lets-see-quarto-in-action",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Let’s see Quarto in action",
+    "text": "Let’s see Quarto in action\nhttps://github.com/mine-cetinkaya-rundel/quarto-rladies-cologne"
+  },
+  {
+    "objectID": "talk.html#quarto-cli",
+    "href": "talk.html#quarto-cli",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Quarto CLI…",
+    "text": "Quarto CLI…\norchestrates each step of rendering\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "talk.html#learning-more",
+    "href": "talk.html#learning-more",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Learning more",
+    "text": "Learning more\nhttps://quarto.org"
+  },
+  {
+    "objectID": "talk.html#look-forward-to",
+    "href": "talk.html#look-forward-to",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Look forward to",
+    "text": "Look forward to\nQuarto 1.4! https://quarto.org/docs/prerelease/1.4/"
+  },
+  {
+    "objectID": "talk.html#follow-up-with",
+    "href": "talk.html#follow-up-with",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Follow up with…",
+    "text": "Follow up with…\nthe Quarto Blog: https://quarto.org/docs/blog"
+  },
+  {
+    "objectID": "talk.html#thank-you",
+    "href": "talk.html#thank-you",
+    "title": "Hello, Quarto:A World of Possibilities (for Reproducible Publishing)",
+    "section": "Thank you!",
+    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n🐦 @minebocek"
+  }
+]
