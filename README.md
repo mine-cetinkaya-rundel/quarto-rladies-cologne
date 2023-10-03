@@ -9,8 +9,6 @@ Hello, Quarto: A World of Possibilities (for Reproducible Publishing) talk for R
 - R: 4.3.1 (2023-06-16) -- "Beagle Scouts"
 - Packages: tidyverse, palmerpenguins, gt
 
-## Live coding steps
-
 ## Demo
 
 ### Documents
